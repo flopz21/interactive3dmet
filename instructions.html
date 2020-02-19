@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html>
+ <head> 
+  <title>Metropolitan Museum of Art</title> 
+  <script type="text/javascript" src="js/controls/three.js"></script> 
+  <script type="text/javascript" src="js/controls/OBJLoader.js"></script> 
+  <script type="text/javascript" src="js/controls/MTLLoader.js"></script> 
+  <script type="text/javascript" src="js/controls/OBJMTLLoader.js"></script> 
+  <script type="text/javascript" src="js/controls/jquery-1.js"></script> 
+  <script type="text/javascript" src="js/controls/stats.js"></script> 
+  <script type="text/javascript" src="js/controls/dat.gui.js"></script> 
+  <script type="text/javascript" src="js/controls/chroma.js"></script> 
+  <script type="text/javascript" src="js/controls/FirstPersonControls.js"></script> 
+  <link href = "layout.css" rel="stylesheet" type="text/css">
+  <style>
+        body {
+            /* set margin to 0 and overflow to hidden, to go fullscreen */
+            margin: 0;
+            overflow: hidden;
+        }
+    </style> 
+<style>
+
+</style>
+</head>
+<body style="background-color:#000000">
+
+<ul>
+  <li>&emsp;&emsp;&emsp;&emsp;&emsp;<a  href="http://interactive3dmet.com/default.html">3D Museum</a></li>
+  <li><a href="http://interactive3dmet.com/instructions.html"  >Instructions</a></li>
+  <li><a href="http://interactive3dmet.com/about.html"  >About</a></li>
+</ul>
+
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>	
+
+ 
+ <font color = "white">
+ <h1> Interactive 3D visualisation of the Metropolitan Museum of Art by using WebGL"</h1>
+ <p>Made by Anastasios Barlas</p>
+ <h2>Interactions</h2>
+ 
+	<li>Move forwards: W or left click or double tap and hold on trackpad or forward arrow key</li><br>
+    <li>Move backwards: S or right click or back arrow key</li><br>
+	<li>Move left: A or left arrow key</li><br>
+	<li>Move right: D or right arrow key</li><br>
+	<li>Move up:R</li><br>
+	<li>Move down:F</li><br>
+	<li>Pause 3D visualization: Q</li><br>
+	<li>Control orientation of camera: mouse or trackpad gestures</li><br>
+	<li>Bring scene to default view: CTRL + R</li><br>
+	
+ 
+  
+ </body>
+</html>
